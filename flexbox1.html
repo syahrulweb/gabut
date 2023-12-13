@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header{
+            background-color: blanchedalmond;
+            padding: 10px;
+            text-align: center;
+        }
+        main{
+            display: flex;
+            flex: 1;
+        }
+        aside{
+            background-color: aquamarine;
+            padding: 10px;
+            flex: 1;
+        }
+        article{
+            background-color: darkcyan;
+            padding: 10px;
+            flex: 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img{
+            padding: 20px;
+            max-width: 25%;
+        }
+        footer{
+            background-color: gold;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Tampilan Header</header>
+        <main>
+            <aside>Tampilan aside</aside>
+            <article>
+                <img src="poto.jpg" alt="">
+                <img src="poto.jpg" alt="">
+                <img src="poto.jpg" alt="">
+            </article>
+        </main>
+        <footer>Tampilan Footer</footer>
+    </div>
+</body>
+</html>
